@@ -1,0 +1,14 @@
+GET http://localhost:8080/api/journal/income
+
+###
+
+POST http://localhost:8080/api/journal/income
+Content-Type: application/json
+
+{
+  "dateTime" : "2023-05-19T13:50:22.588",
+  "accountId" : 1,
+  "money" : 1000000,
+  "categoryId" : 1,
+  "description" : "sold squid"
+}
