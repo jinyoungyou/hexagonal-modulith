@@ -18,12 +18,12 @@ public class JournalService implements RegisterIncomeUseCase, GetAllIncomeUseCas
     private final GetAllIncomePort getAllIncomePort;
 
     @Override
-    public void registerIncome(RegisterIncomeCommand registerJourNalCommand) {
-        var income = new Income(registerJourNalCommand.getDateTime(),
-                registerJourNalCommand.getAccountId(),
-                registerJourNalCommand.getMoney(),
-                registerJourNalCommand.getCategoryId(),
-                registerJourNalCommand.getDescription());
+    public void registerIncome(RegisterIncomeCommand registerJournalCommand) {
+        var income = new Income(registerJournalCommand.getDateTime(),
+                registerJournalCommand.getAccountId(),
+                registerJournalCommand.getMoney(),
+                registerJournalCommand.getCategoryId(),
+                registerJournalCommand.getDescription());
 
         registerIncomePort.registerIncome(income);
     }
